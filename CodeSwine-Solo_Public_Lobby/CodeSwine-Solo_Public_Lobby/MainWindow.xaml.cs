@@ -89,7 +89,7 @@ namespace CodeSwine_Solo_Public_Lobby
 
         private void SetIpCount()
         {
-            lblAmountIPs.Content = addresses.Count() + " IPs whitelisted!";
+            lblAmountIPs.Content = addresses.Count() + " 개의 아이피가 허용됨";
         }
 
         private void btnEnableDisable_Click(object sender, RoutedEventArgs e)
@@ -136,14 +136,14 @@ namespace CodeSwine_Solo_Public_Lobby
         {
             btnEnableDisable.Background = ColorBrush.Red;
             image4.Source = new BitmapImage(new Uri("/CodeSwine-Solo_Public_Lobby;component/ImageResources/unlocked.png", UriKind.Relative));
-            lblLock.Content = "Rules not active." + Environment.NewLine + "Click to activate!";
+            lblLock.Content = "방화벽 꺼짐" + Environment.NewLine + "클릭하여 활성화";
         }
 
         void UpdateActive()
         {
             btnEnableDisable.Background = ColorBrush.Green;
             image4.Source = new BitmapImage(new Uri("/CodeSwine-Solo_Public_Lobby;component/ImageResources/locked.png", UriKind.Relative));
-            lblLock.Content = "Rules active." + Environment.NewLine + "Click to deactivate!";
+            lblLock.Content = "방화벽 켜짐" + Environment.NewLine + "클릭하여 비활성화";
         }
 
         [DllImport("User32.dll")]

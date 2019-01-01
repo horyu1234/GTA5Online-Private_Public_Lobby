@@ -41,7 +41,7 @@ namespace CodeSwine_Solo_Public_Lobby.Helpers
             } catch (Exception e)
             {
                 ErrorLogger.LogException(e);
-                MessageBox.Show("Please start this program as administrator!");
+                MessageBox.Show("프로그램을 관리자 권한으로 실행해주세요.", "경고", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -108,7 +108,7 @@ namespace CodeSwine_Solo_Public_Lobby.Helpers
             } catch (Exception e)
             {
                 ErrorLogger.LogException(e);
-                MessageBox.Show("Run this program as administrator!");
+                MessageBox.Show("프로그램을 관리자 권한으로 실행해주세요.", "경고", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
     }

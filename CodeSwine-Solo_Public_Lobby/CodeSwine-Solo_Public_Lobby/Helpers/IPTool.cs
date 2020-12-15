@@ -30,7 +30,7 @@ namespace CodeSwine_Solo_Public_Lobby.Helpers
             string ip = "";
             try
             {
-                ip = new WebClient().DownloadString("http://ipv4.icanhazip.com");
+                ip = new WebClient().DownloadString("https://api.my-ip.io/ip");
             }
             catch (Exception e)
             {
